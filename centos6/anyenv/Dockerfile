@@ -1,7 +1,7 @@
 #
 # 2019/04/24
 #   CentOS 6.7 + epel,remi,rpmforge
-#	Python 2.7
+#	anyenv
 #
 
 FROM centos:6
