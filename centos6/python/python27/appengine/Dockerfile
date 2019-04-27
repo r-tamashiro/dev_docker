@@ -31,6 +31,7 @@ RUN /bin/bash -l -c 'exec $SHELL -l'
 RUN /bin/bash -l -c 'nodenv install 10.15.1'
 RUN /bin/bash -l -c 'exec $SHELL -l'
 RUN /bin/bash -l -c 'nodenv global 10.15.1'
+RUN /bin/bash -l -c 'npm install -g vue-cli'
 
 EXPOSE 22
 
