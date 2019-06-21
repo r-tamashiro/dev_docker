@@ -1,6 +1,5 @@
 #
-# PHP 7,2
-# Nodejs 10.15.1
+# Go 1.11.0
 #
 #
 FROM tama8/centos6-anyenv
