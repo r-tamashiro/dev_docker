@@ -5,7 +5,7 @@
 FROM tama8/centos7-anyenv
 MAINTAINER tamashiro
 
-RUN yum install -y bzip2 && \
+RUN yum install -y bzip2 mysql-devel gcc-c++ && \
     yum clean all
 
 #RUN yum install -y libX11 libXcomposite libXcursor libXdamage libXext libXi libXtst cups-libs libXScrnSaver libXrandr alsa-lib pango atk at-spi2-atk gtk3 && \
@@ -20,9 +20,9 @@ USER dev
 RUN $HOME/.anyenv/bin/anyenv install rbenv
 RUN /bin/bash -l -c 'exec $SHELL -l'
 RUN /bin/bash -l -c 'cd $(rbenv root g)/plugins/ruby-build && git pull'
-RUN /bin/bash -l -c 'rbenv install 2.6.5'
+RUN /bin/bash -l -c 'rbenv install 2.5.7'
 RUN /bin/bash -l -c 'exec $SHELL -l'
-RUN /bin/bash -l -c 'rbenv global 2.6.5'
+RUN /bin/bash -l -c 'rbenv global 2.5.7'
 
 
 EXPOSE 22
