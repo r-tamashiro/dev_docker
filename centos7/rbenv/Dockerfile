@@ -20,9 +20,9 @@ USER dev
 RUN $HOME/.anyenv/bin/anyenv install rbenv
 RUN /bin/bash -l -c 'exec $SHELL -l'
 RUN /bin/bash -l -c 'cd $(rbenv root g)/plugins/ruby-build && git pull'
-RUN /bin/bash -l -c 'rbenv install 2.5.7'
+RUN /bin/bash -l -c 'rbenv install 2.5.5'
 RUN /bin/bash -l -c 'exec $SHELL -l'
-RUN /bin/bash -l -c 'rbenv global 2.5.7'
+RUN /bin/bash -l -c 'rbenv global 2.5.5'
 
 
 EXPOSE 22
